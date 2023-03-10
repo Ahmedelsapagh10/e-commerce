@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:juniorflutterdevelopervacancytask/constants.dart';
 
@@ -8,8 +6,8 @@ class ProductsWebServices {
   ProductsWebServices() {
     BaseOptions options = BaseOptions(
       baseUrl: baseUrl,
-      receiveTimeout: 20000,
-      connectTimeout: 20000,
+      receiveTimeout: const Duration(microseconds: 20000),
+      connectTimeout: const Duration(microseconds: 20000),
       receiveDataWhenStatusError: true,
     );
     dio = Dio(options);
