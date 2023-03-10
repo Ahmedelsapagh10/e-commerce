@@ -197,7 +197,8 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                       color: kTextColor),
                   child: Center(
                       child: Text(
-                    'Confirm Payment  ${controller.getAllPrice()} ' r'$ ',
+                    'Confirm Payment  ${controller.getAllPrice().toString()} '
+                    r'$ ',
                     style: const TextStyle(
                       color: m6Color,
                       fontSize: 22,

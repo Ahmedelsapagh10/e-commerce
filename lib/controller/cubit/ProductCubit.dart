@@ -76,6 +76,7 @@ class ProductsCubit extends Cubit<ProductsState> {
     }
     return getTotoalPrice;
   }
+
   //
 }
 //
